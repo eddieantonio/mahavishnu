@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>THE MAHAVISHNU GENERATOR</title>
+    <script src="words.js"></script>
+    <script src="maha.js"></script>
+    <style>
+        body {
+            color: #777;
+            background: #f0f0f0 url(w2b.png) repeat-y right bottom;
+            /*background: -moz-linear-gradient(bottom, #E5E5E5, #FFFFFF);*/
+            background: -webkit-gradient(linear, left bottom, left top,
+                        from(#E5E5E5), to(#FFFFFF));
+            /*
+            background: -webkit-gradient(linear, left top, left bottom,
+            from(#ccc), to(#000));
+            */
+            
+            text-align: center;
+            overflow: clip;
+            font-family: Geneva, "Bitstream Vera Sans", Helvetica, Arial, sans;
+            text-transform: lowercase;
+        }
+        h1#title {
+            font-size: 48pt;
+            margin-bottom: 0px;
+        }
+        h2#subtitle {
+            font-size: 4pt;
+            /*margin-top: -10px;*/
+            color: #666666;
+            position: absolute;
+            bottom: 6pt;
+            right: 6pt;
+            text-transform: none;
+        }
+        h2#prefix {
+            font-size: 24pt;
+            margin-bottom: 0px;
+        }
+        div#song-title {
+            font-size: 96pt;
+            color: #ff3366;
+            font-weight: bold;
+            text-transform: none;
+            font-family: Helvetica;
+            text-shadow: 2pt 3pt 2px #CCC;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">The Mahavishnu Generator<sup style="font-size: 0.5em; color: #444;">*</sup></h1>
+
+    <h2 id="prefix">Your song title is:</h2>
+    <div id="song-title">
+        <script>
+            document.write(generateSongName());
+        </script>
+        <noscript>
+            Javascript Deficiencer!
+        </noscript>
+     </div>
+    <h2 id="subtitle"><span style="font-size: 1.5em;">*</span>now with 25% more
+        Van der Graaffs (error margin: &plusmn;25%).</h2>
+</body>
+</html>
